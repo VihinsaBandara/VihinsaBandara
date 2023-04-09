@@ -39,6 +39,14 @@ const MyVideo = () => {
      controls={true}
     
      />
+     <ReactPlayer 
+    className='react-player'
+     url='https://www.youtube.com/watch?v=OTDBed-9td0&t=9s'
+     volume={0.5}
+     muted={false}
+     controls={true}
+    
+     />
      </div>
 
      
