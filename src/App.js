@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactPlayer from "react-player/youtube";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyVideo />
     </div>
   );
-}
+};
+
+const MyVideo = () => {
+  return (
+    <div className="player-wrapper" style={{justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    
+    <ReactPlayer 
+    className='react-player'
+     url='https://www.youtube.com/watch?v=OTDBed-9td0&t=9s'
+     volume={0.5}
+     muted={false}
+     controls={true}
+    
+     />
+
+<ReactPlayer 
+    className='react-player'
+     url='https://www.youtube.com/watch?v=OTDBed-9td0&t=9s'
+     volume={0.5}
+     muted={false}
+     controls={true}
+    
+     />
+
+<ReactPlayer 
+    className='react-player'
+     url='https://www.youtube.com/watch?v=OTDBed-9td0&t=9s'
+     volume={0.5}
+     muted={false}
+     controls={true}
+    
+     />
+     </div>
+
+     
+
+     
+  );
+};
 
 export default App;
